@@ -1,14 +1,16 @@
 //Write a Java program to convert a binary number to a decimal number.
 package basicpart1;
-
-import java.util.Scanner;
+ import java.util.Scanner;
 
 public class BinarytoDecimalConverter {
-     public static void main(String[] args) {
-        String binary;
-        Scanner input = new Scanner(System.in);
-        binary = input.nextLine();
-        Integer decimal = Integer.parseInt(binary,2);
-        System.out.println(decimal);
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input a binary number: ");
+        String binary = sc.nextLine();
+
+        int decimal = Integer.parseInt(binary, 2);
+        System.out.println("Decimal number:  " + decimal);
     }
 }
+
